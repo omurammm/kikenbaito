@@ -1,6 +1,6 @@
 # kikenbaito
 
-This is a prototype of the website introducing danger but good salary part-time　jobs.
+This is a prototype of the website introducing danger but good salary part-time jobs.
 
 ## Running
 ```
