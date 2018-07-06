@@ -1,0 +1,98 @@
+body {
+    background-color: #f5f5f5;
+    }
+
+header {
+    background-color: white;
+    padding: 0px 50px 12px;
+}
+
+img{
+    display: inline-block;
+    width: 150px;
+    height: 130px;
+    vertical-align: middle;
+}
+
+h4{
+    margin: 0px 0px 0px;
+}
+
+#register{
+    display: inline-block;
+    float: right;
+    padding: 50px 0px 0px;
+}
+
+h3{
+    display: inline-block;
+    padding: 20px 20px 20px;
+}
+
+h2{
+    padding: 0px 30px 5px;
+    margin: 0px;
+}
+
+
+.value{
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    margin-right: 300px;
+
+}
+
+.detail{
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    position:relative;
+    left:15%
+
+}
+
+.column{
+    display: inline-block;
+    padding: 5px 30px 5px;
+    font-weight: bolder;
+}
+
+#job{
+    background-color: white;
+    margin: 0px 25px 40px;
+}
+
+
+.line{
+    margin: 20px 10px 20px;
+}
+
+#ep{
+    padding-bottom: 30px;
+}
+
+#apply{
+    text-align:center;
+    margin: 0px 0px 40px;
+
+}
+
+#but{
+    padding: 15px 50px 15px;
+    color: #fff;
+    background-color: red;
+}
+
+#line1{
+   margin: 10px 0px 10px;
+}
+
+#pic{
+    text-decoration: none;
+}
+
+#danger{
+    padding: 30px 30px 0px;
+    margin: 30px 0px 5px;
+}

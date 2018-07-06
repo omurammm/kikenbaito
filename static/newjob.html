@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+    <meta charset= "UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>仕事登録フォーム</h1>
+    <form id="job">
+        <h3>仕事名</h3>
+        <input type="text" id="name" placeholder="仕事名">
+        <h3>時給</h3>
+        <input type="text" id="money" placeholder="時給">
+        <h3>場所</h3>
+        <input type="text" id="place" placeholder="場所">
+        <h3>企業名</h3>
+        <input type="text" id= "company" placeholder="企業">
+        <h3>危険度</h3>
+        <select name="risk" id="risk"><option value="">選択してください</option>
+            <option value="1">１（易しい）</option>
+            <option value="2">２（普通）</option>
+            <option value="3">３（やや危険）</option>
+            <option value="4">４（危険）</option>
+            <option value="5">５（極めて危険）</option></select>
+        <h3>説明</h3>
+        <textarea id="examination" name= "examination" rows="4" cols="40">説明を記入してください。</textarea>
+        <input type="submit" value="送信する">
+    </form>
+    <script type="text/javascript" src="job.js"></script>
+</body>
+</html>

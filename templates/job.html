@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='job.css') }}"/>
+
+
+    </head>
+    <body>
+    <header>
+        <a id="pic" href="{{ url_for('index') }}">
+            <img border="0" src="{{ url_for('static', filename='logo.png') }}">
+        </a>
+        <h3>危険・高収入バイト多数掲載！</h3>
+        <div  id="register">
+            <a href="static/register.html">会員登録</a> |
+            <a href="static/login.html">ログイン</a>&emsp;&emsp;
+            <a href="static/newjob.html">求人広告掲載をご検討の企業様へ</a>
+        </div>
+        <Hr id="line1" color="#D8D8D8">
+        <h4>バイト詳細</h4>
+    </header>
+    <div id="job">
+        <div class="upside" id="danger">
+            <b>危険度</b>：
+            {% if job_info.危険度<=5 and job_info.危険度>4 %}
+            <font color="deeppink"><b>{{ job_info.危険度  }}</b></font>
+            {% elif job_info.危険度<=4 and job_info.危険度>3 %}
+            <font color="mediumvioletred"><b>{{ job_info.危険度  }}</b></font>
+            {% elif job_info.危険度<=3 and job_info.危険度>2 %}
+            <font color="crimson"><b>{{ job_info.危険度  }}</b></font>
+            {% elif job_info.危険度<=2 and job_info.危険度>1 %}
+            <font color="red"><b>{{ job_info.危険度  }}</b></font>
+            {% elif job_info.危険度<=1 and job_info.危険度>0 %}
+            <font color="orangered"><b>{{ job_info.危険度  }}</b></font>
+            {% endif %}
+        </div>
+
+        <h2>
+            {{ job_info.name }}
+        </h2>
+        <br>
+
+        <div>
+            <div class="column">
+                仕事内容
+            </div>
+            <div class="detail">
+                {{ job_info.詳細 }}
+            </div>
+        </div>
+
+        <Hr class="line" color="#D8D8D8">
+
+
+        <div>
+        <div class="column">
+            {{ job_info.給与形態 }}
+        </div>
+        <div class="value">
+            {{ job_info.給与 }}
+        </div>
+        </div>
+
+        <Hr class="line" color="#D8D8D8">
+
+        <div>
+        <div class="column">
+            交通　　
+        </div>
+        <div class="value">
+          {{ job_info.交通 }}
+        </div>
+        </div>
+
+        <Hr class="line" color="#D8D8D8">
+
+
+
+        <div>
+        <div class="column">
+            応募資格
+        </div>
+        <div class="value">
+            {{ job_info.応募資格 }}
+        </div>
+        </div>
+
+        <Hr class="line" color="#D8D8D8">
+
+        <div>
+        <div class="column">
+            企業名　
+        </div>
+        <div class="value">
+            {{ job_info.企業名 }}
+        </div>
+
+        </div>
+
+        <Hr class="line" color="#D8D8D8">
+        <div id="ep">
+            <div class="column">
+                レビュー　
+            </div>
+            <div class="value">
+                なし
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <div id="apply">
+        <button id="but">
+            <div class="bt_zi" id="zi"></div><font size="4">応募画面へ</font>
+        </button>
+    </div>
+    </body>
+</html>
